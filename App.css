@@ -1,0 +1,959 @@
+@font-face {
+  font-family: 'futura';
+  src: url(https://fonts.cdnfonts.com/css/futura-pt) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  margin: 0px 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'futura',;
+  min-height: fit-content;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container{
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #666262ec;
+}
+.wrapper{
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+
+.wrapper .top_nav,
+.wrapper .bottom_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.wrapper .top_nav {
+  background: #fff;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-right: 45px;
+}
+.wrapper .top_nav .icon img{
+ height: 30px;
+}
+
+.wrapper .top_nav .icon a {
+  margin-right: 14px;
+}
+
+.wrapper .top_nav .left ul li a {
+  display: block;
+  padding: 8px 10px;
+  color: #666666;
+  font-family: system-ui;
+}
+.wrapper .bottom_nav .left {
+  width: 100%;
+  max-width: 1280px;
+  align-items: end;
+  margin: 0 auto;
+}
+.wrapper .top_nav .left ul {
+  display: flex;
+}
+
+.wrapper .bottom_nav {
+  background: #0d204b;
+  height: 50px;
+  padding: 0 85px;
+}
+
+.wrapper .bottom_nav ul {
+  display: flex;
+  justify-content: end;
+}
+.wrapper .bottom_nav img{
+  height: 25px;
+}
+
+.wrapper .bottom_nav ul li {
+  margin: 12px;
+}
+
+.wrapper .bottom_nav ul li a {
+  color: #a7a5a5;
+  text-transform: uppercase;
+  gap: 20px;
+  font-family: futura;
+}
+
+/*  */
+
+/* .container {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.container img {
+  width: 1366px;
+  height: 734px;
+  display: flex;
+} */
+
+/* first image */
+#first_image {
+  background-image: url("images/Main Page banner.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  min-height: fit-content;
+  background-position: top 100% right 0;
+  justify-content: left;
+  padding-left: 300%;
+  padding: 15vh 14vh;
+}
+
+#first_image .content h1 {
+  font-size: 40px;
+  margin-top: 5%;
+  color: #3c4664;
+}
+#first_image .content p {
+  font-size: 20px;
+  color: #3c4664;
+}
+#first_image .content .first_image_logo .logo-container p {
+  font-size: 20px;
+  margin-top: -20px;
+  color: #3c4664;
+}
+#first_image .content .first_image_logo .logo-container2 p {
+  font-size: 20px;
+  margin-top: -114px;
+  color: rgb(60, 70, 100);
+  margin-left: 116px;
+}
+
+.first_image_logo {
+  display: flex;
+  margin: 5% 0;
+}
+#first_image .first_image_logo p .logo-text p{
+  margin-left: 12px;
+  margin-bottom: -0%;
+}
+#first_image .first_image_logo .logo-container2 p {
+  margin-top: -113px;
+  margin-left: 95px;
+}
+#first_image .first_image_logo .logo-container2 p{
+  padding-right:508px;
+  padding-top: 75px;
+}
+
+.fs_first_logo {
+  height: 50px;
+  margin-top: -25%;
+  width: 215px;
+}
+.fs_first_logo1 {
+  height: 50px;
+  margin-top: 10%;
+  width: 215px;
+}
+.fs_first_logo2 {
+  height: 50px;
+  margin-top: 10%;
+  width: 215px;
+}
+.fs_second_logo {
+  height: 50px;
+  margin-top: -25%;
+  width: 215px;
+  margin-left: 50px;
+}
+.fs_second_logo2 {
+  height: 50px;
+  width: 240px;
+  margin-left: 50px;
+  margin-top: 7%;
+}
+.logo-container5 .fs_first_logo3 {
+  height: 50px;
+  width: 240px;
+  /* margin-left: 50px; */
+  /* margin-top: 7%; */
+}
+.fs_second_logo4 {
+  height: 50px;
+  width: 240px;
+  margin-left: 250px;
+  margin-top: -10%;
+}
+#second_image {
+  background-image: url("images/Mask\ Group\ 322.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  min-height: fit-content;
+  background-position: top 100% right 0;
+  justify-content: left;
+  padding-left: 300%;
+  padding: 15vh 14vh;
+  color: #3c4664;
+}
+#second_image .content h1{
+  font-size: 32px;
+}
+#second_image .first_image_logo .logo-container3 p{
+  margin-left: 50px;
+  margin-top: -35px;
+}
+#second_image .first_image_logo .logo-container4 p{
+  margin-left: 105px;
+  margin-top: -35px;
+}
+#second_image .first_image_logo .logo-container2 p{
+  margin-left: 55px;
+  margin-top: -46px;
+}
+#second_image .second_image_logo .logo-container5 p{
+  margin-left: 60px;
+  margin-top: -43px;
+}
+
+#third_image {
+  background-image: url("images/Mask\ Group.png");
+  height: 130vh;
+  background-size: cover;
+  min-height: fit-content;
+  background-position: top 100% right 0;
+  padding: 15vh 20vh;
+  padding-right: 60vh;
+}
+
+.third_image_first_row {
+  display: flex;
+  margin-bottom: 50px;
+}
+.mid {
+  align-items: center;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.third_image_about {
+  font-size: 70px;
+  color: whitesmoke;
+  justify-content: left;
+}
+
+#third_image p {
+  color: whitesmoke;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.third_image_logob {
+  height: 50px;
+  width: 245px;
+}
+
+.third_image_botttom {
+  margin-top: 150px;
+}
+
+/* OUR SERVICES */
+#our_services {
+  height: 70vh;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+#our_services p {
+  font-size: 80px;
+  color: #3c4664;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.our_services_images {
+  display: flex; /* Display the images in a row */
+  flex-direction: row; /* Arrange images vertically */
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 6%; /* Center align images horizontally */
+}
+.service_image .immigration {
+  margin-top: -192px; /* Add spacing between image and title */
+  color:#a7a5a5;
+  margin-left: 18px;
+  font-size: 17px;
+}
+.GUIDANCE{
+  margin-top: -192px;
+  color:#a7a5a5;
+  font-size: 14px;
+  margin-left: 19px;  
+}
+.WRITING{
+  margin-top: -192px;
+  font-size: 14px;
+  margin-left: 13px;
+  color:#a7a5a5;
+}
+.LANDING {
+  margin-top: -192px;
+  font-size: 16px;
+  margin-left: 15px;
+  color:#a7a5a5;
+}
+.service_image img {
+  max-width: 100%; /* Set maximum width to ensure images fit container */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Reset width to auto (important for aspect ratio) */
+}
+.service_image {
+  margin: 10px; /* Add spacing between images */
+}
+.service_image img {
+  width: 30%; /* Adjust the width of the images */
+  height: 10%;
+  width: auto;
+  max-width: 80%;
+}
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Second image */
+#first_image2 {
+  background-image: url("images/Asset\ 2@2x.png");
+  background-size: cover;
+  min-height: fit-content;
+  background-position: top 42% right 0;
+  height: 100vh;
+}
+#first_image2 .highlight {
+  padding-top: 12%;
+  padding-left: 7%;
+  font-size: 25px;
+  color: #3c4664;
+}
+#second_image2 {
+  background-image: url("SVG/Asset\ 21.svg");
+  height: auto;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: top 30px right 170px;
+  margin-bottom: 8%;
+}
+#second_image2 .content .content_1{
+  font-size: 20px;
+  padding-top: 5%;
+  color: #3c4664;
+  padding-left: 7%;
+}
+#second_image2 .content .content_1 .highlight{
+font-size: 75px;
+font-family: 'Times New Roman', serif;
+}
+#second_image2 .content_2 {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+}
+
+#second_image2 .content_2 img {
+  max-width: 10%;
+  margin-right: 15px; 
+}
+
+#second_image2 .content_2 .salary-section {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  color: #3c4664;
+}
+#second_image2 .content_2 .salary-section1 {
+  border: 3px solid #3c4664; /* Add a border for the box */
+  padding: 10px;
+  font-size: 18px;
+  color: #3c4664;
+  margin-left:7%; /* Reset margin for the p element */
+}
+#second_image2 .content_3 {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+  margin-top: 4%;
+}
+#second_image2 .content_3 img {
+  max-width: 10%;
+}
+
+#second_image2 .content_3 .culture-section2 {
+  font-size: 25px;
+  display: flex;
+  margin-left: 7%;
+  flex-direction: column;
+  color: #3c4664;
+}
+#second_image2 .content_3 .culture-section1 {
+  border: 3px solid #3c4664; /* Add a border for the box */
+  padding: 10px;
+  font-size: 18px;
+  color: #3c4664;
+}
+
+#second_image2 .content_4 {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+  margin-top: 4%;
+}
+
+#second_image2 .content_4 img {
+  max-width: 10%;
+  margin-right: 15px; 
+}
+
+#second_image2 .content_4 .education-section {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  color: #3c4664;
+}
+#second_image2 .content_4 .education-section1 {
+  border: 3px solid #3c4664; /* Add a border for the box */
+  padding: 10px;
+  font-size: 18px;
+  color: #3c4664;
+  margin-left:7%; 
+}
+#third_image2 img {
+  margin-top: 6%;
+  margin-left: 10%;
+  max-width: 22%;
+}
+#third_image2 {
+  background-image: url("SVG/Group\ 407.svg");
+  background-color: #0d204b; /* Change to your desired blue color */
+  width: 100%; /* Set the width to 100% to make it rectangular */
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: right 65%;
+  background-size: 16%; /* Decrease the image size to 80% of the container */
+}
+
+#third_image2 .text-container {
+  font-size: 30px;
+  margin-left: 2%;
+  font-weight: lighter;
+}
+#third_image2 .text-container .logo{
+font-weight: bold;
+}
+#third_image2 .migration{
+  font-size: 18px;
+  margin-left: 10%;
+  color: #f7f8fa;
+}
+#third_image2 .rectangle-box {
+  display: inline-block;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+#second_image2 .fa-plane {
+  margin-top: 2%;
+  color: hsl(202, 83%, 45%);
+   position: absolute;
+   font-size: 25px; 
+   right: 14.8%;
+   transform: translateY(-40%) rotate(134deg);
+}
+#third_image2 .second_plane img{
+  margin: 3px;
+  margin-bottom: -26px;
+}
+
+/* Third image */
+#first_image3 {
+  background-image: url("images/service.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  min-height: fit-content;
+  background-position: top 42% right 0;
+}
+
+#second_image3 {
+  background-image: url("SVG/Asset\ 21.svg");
+  height: auto;
+  width: auto;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: top 20px right 150px;
+  padding: 10vh 16vh;
+  margin-bottom: 100px;
+  color: #3c4664;
+}
+
+#second_image3 .highlight {
+  font-family: 'Courier New', monospace;
+  font-size: 6vh;
+}
+#second_image3 .centered-paragraph {
+  
+  background-repeat: no-repeat;
+  background-position: left;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-right: 36%;
+  max-width: calc(50% - 20px);
+}
+#second_image3 .image{
+  background-image: url(SVG/Asset\ 4.svg);
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: left;
+}
+#second_image3 .left .image1 {
+  background-image: url(SVG/Asset\ 5.svg);
+  background-repeat: no-repeat;
+}
+#second_image3 .left .left-paragraph2 .image3 {
+  background-image: url(SVG/Asset\ 11.svg);
+  background-repeat: no-repeat;
+  margin-left: 47%;
+  background-size: 10%;
+}
+#second_image3 .big-visa {
+  font-size: 16vh;
+  color: #3c4664;
+  font-weight: normal;
+  position: relative;
+}
+.globe-icon {
+  font-size: 25px;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+}
+#second_image3 .highlight1 {
+  font-size: 19px;
+}
+#third_image3 {
+  background-color: #0d204b; /* Change to your desired blue color */
+  width: 100%; /* Set the width to 100% to make it rectangular */
+  height: auto; /* Adjust the height as needed */
+  position: relative;
+}
+.text-container {
+  position: relative;
+  top: 10%; /* Position it at the vertical center */
+  left: 100px; 
+  color: white;
+  text-align: left;
+  max-width: 50%; /* Limit the width of the text container */
+  box-sizing: border-box;
+  max-width: calc(50% - 20px);
+}
+
+.seize-text {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: '"Lucida Sans", sans-serif';
+}
+
+.hassle-text {
+  font-size: 30px;
+  font-family: '"Lucida Sans", sans-serif';
+}
+.intro-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+.svg {
+  position: absolute;
+  left: 50%; 
+  background-image: url('SVG/Group\ 336.svg');
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 56px;
+}
+
+
+/* 5t image */
+#first_image5 {
+  background-image: url("images/Asset\ 13@2x.png");
+  height: auto;
+  background-size: cover;
+  background-position: top 44% right 0;
+  padding: 18% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#first_image5 .content h1 {
+  font-size: 80px;
+  color: #3c4664;
+  display: flex;
+  align-items: center;
+}
+
+#first_image5 .content h1 img {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+#first_image5 .content .word {
+  font-size: 20px;
+  margin-left: 8px;
+  color: #3c4664;
+}
+
+#first_image5 .content .bottom {
+  font-size: 19px;
+  font-family: "Josefin Sans",bold, sans-serif;
+  color: #3c4664;
+}
+
+#second_image5 {
+  background-image: url("PNG/PNG/Asset 6@2x.png");
+  height: auto;
+  width: auto;
+  background-size: contain; /* Use 'contain' to fit the image within the container */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: top 20px right 156px; /* Center the image both horizontally and vertically */
+  padding: 15vh 15vh;
+  padding-right: 70vh;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+} 
+#second_image5 .content h1 {
+  font-size: 30px;
+  color: #3c4664;
+}
+#second_image5 .content h1 span{
+  font-size: 80px;
+  color: #3c4664;
+  font-weight: lighter;
+}
+#second_image5 .content p{
+  font-size: 25px;
+  color: #3c4664;
+}
+#second_image5 .content .large {
+  font-size: 55px;
+  color: #3c4664;
+  display: flex;
+}
+
+.paragraph-container {
+  display: inline-block;
+  text-align: left; 
+  color: #3c4664;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#third_image5 {
+  background-image: url("PNG/PNG/Asset 5@2x.png");
+  height: auto;
+  background-size: 30% auto; /* Adjust the background size as needed */
+  min-height: fit-content;
+  background-repeat: no-repeat;
+  background-position: top 90px right 100px;
+  padding: 15vh 15vh;
+  background-color: #a7a5a52e;
+  padding-right: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+#third_image5 .content h1 {
+  font-size: 24px;
+  color: #3c4664;
+}
+#third_image5 .content p{
+  font-size: 19px;
+}
+
+#fourth_image5 {
+  background-image: url("PNG/PNG/Asset 4@2x.png");
+  height: auto;
+  background-size: 20% auto;
+  min-height: fit-content;
+  background-repeat: no-repeat;
+  background-position: top 120px right 200px;
+  padding: 15vh 15vh;
+  padding-right: 100vh;
+  background-color: #001f3f;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  padding-right: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.transition {
+  gap: 4px;
+  font-size: 18px;
+  font-family: monospace;
+}
+.transition h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.transition p {
+  color: white;
+  font-size: 18px;
+}
+
+.rectangle-box {
+  display: inline-block;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px 12px;
+  margin-top: 50px;
+  position: 4px;
+}
+
+.rectangle-box p {
+  margin: 0;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.fa-plane {
+  color: #fff;
+}
+.dotted-path {
+  display: inline-block;
+  width: 60px;
+  height: auto; /* Adjust the height of the dotted path */
+  color: rgb(204, 201, 196);
+  margin: 0 7px; /* Adjust the spacing between the elements */
+  border-top: 1px dashed white;
+}
+.globe {
+  background-image: url("SVG/Asset\ 7.svg");
+  background-repeat: no-repeat;
+}
+
+/* Sixth page */
+#first_image6 {
+  background-image: url("PNG/PNG/Asset 14@2x.png");
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  min-height: fit-content;
+  background-position: top 42% right 0;
+}
+
+#first_image6 .content p {
+  font-size: 26px;
+  text-align: center;
+  padding: 10% 35% 10% 0;
+  color: #0d204b;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+#second_image6 {
+  background-image: url("SVG/Asset\ 15.svg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+  min-height: fit-content;
+  color: #0d204bdc;
+  padding: 8% 10%;
+  background-position: top 42% right 0;
+}
+#second_image6 .content p{
+   font-size: 19px;
+   font-family: "Josefin Sans", sans-serif;
+}
+#second_image6 .content h3{
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+}
+#second_image6 .content .content1 {
+  font-size: 55px;
+}
+
+#third_image6 {
+  background-image: url("SVG/Asset%2016.svg"); /* Corrected image URL */
+  background-size: contain; /* Adjusted background size to fit within the container */
+  background-repeat: no-repeat;
+  background-position: right;
+  height: auto;
+  color: #0d204bdc;
+  margin-top: 6%;
+  margin-right: 20px;
+  padding: 0% 10%;
+  background-position: top 42% right 0;
+  margin-bottom: 4%;
+}
+#third_image6 .content p{
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
+}
+#third_image6 .content h3{
+ font-size: 18px;
+ font-family: "Josefin Sans", sans-serif;
+}
+#third_image6 .content .content1 {
+  font-size: 40px;
+}
+
+#forth_image6 {
+  background-image: url("images/Mask\ Group.png");
+  height: auto;
+  background-size: cover;
+  min-height: fit-content;
+  background-position: center;
+  padding: 10% 10%;
+}
+#forth_image6 .content h2{
+  color: #fff;
+  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',;
+}
+
+/* seventh image */
+#first_image7 {
+  background-image: url("PNG/PNG/Asset 23@2x.png");
+  height: auto;
+  width: auto;
+  background-size: cover;
+  min-height: fit-content;
+  padding-bottom: 25%;
+  background-position: top 52% right 0;
+}
+#first_image7 .content p {
+  font-size: 24px;
+  padding: 21% 34% 8% 30px;
+  font-weight: bold;
+}
+
+#first_image7 .image-container {
+  display: flex;
+  margin-right: 20%; /* Adjust the margin as needed */
+}
+
+#first_image7 .image-container img {
+  max-width: 200px;
+  margin-left: 17%;
+  margin-right: -295px;
+  margin-top: 15%;/* Maintain the aspect ratio */
+}
+#second_image7 {
+  background-image: url("SVG/Asset\ 21.svg");
+  height: auto;
+  width: auto;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: top 20px right 156px;
+  padding: 10vh 16vh;
+  margin-bottom: 100px;
+  color: #3c4664;
+}
+#second_image7 .content h3{
+  font-size: 21px;
+  font-weight: bold;
+}
+#second_image7 .content .content1 {
+  font-size: 50px;
+}
+#second_image7 .content p{
+  font-size: 16px;
+  font-weight: monospace;
+}
+#second_image7 .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#second_image7 .image-container img {
+  max-width: 11%;
+  margin-right: 41%;
+  margin-top:-10%;
+}
+#second_image7 .content1 h3{
+  font-size: 19px;
+  font-weight: bold;
+}
+#second_image7 .content1 .content2 {
+  font-size: 50px;
+}
+#second_image7 .content1 p{
+  font-size: 16px;
+  margin-left: 200px;
+}
+#second_image7 .image-container1 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2%;
+}
+
+#second_image7 .image-container1 img {
+  max-width: 10%;
+  margin-right: 41%;
+  margin-top:-10%;
+}
